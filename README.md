@@ -14,6 +14,7 @@ Este repositório é a nova fonte de verdade para o protótipo e não é uma có
 - Linguagem dos golems: docs/art/GOLEM_LANGUAGE.md
 - Benchmark visual 01: docs/art/TERRAIN_BENCHMARK_01.md
 - Regras da pasta de arte: docs/art/README.md
+- Registro de consolidação do legado: docs/art/LEGACY_ART_CONSOLIDATION.md
 - Ideias futuras: docs/future.md
 
 ## Regra principal
