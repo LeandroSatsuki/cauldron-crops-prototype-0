@@ -21,6 +21,15 @@ Este repositório é a nova fonte de verdade para o protótipo e não é uma có
 - Registro de consolidação do legado: docs/art/LEGACY_ART_CONSOLIDATION.md
 - Ideias futuras: docs/future.md
 
+## Workflow do Codex
+
+- Regras permanentes: `AGENTS.md`
+- Implementar feature: `.agents/skills/godot-feature/SKILL.md`
+- Diagnosticar bug: `.agents/skills/godot-debug/SKILL.md`
+- Validar fluxo jogável: `.agents/skills/godot-playtest/SKILL.md`
+
+As Skills são workflows pequenos e reutilizáveis. O objetivo é manter o contexto permanente curto e mover procedimentos específicos para as Skills.
+
 ## Regra principal
 
 O Prototype 0 existe para provar o coração de Cauldron Crops.
