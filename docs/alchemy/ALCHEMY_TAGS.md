@@ -191,64 +191,98 @@ A implementação inicial recomendada é simples e determinística. O adubo não
 
 Uma versão mágica poderá existir no futuro, mas somente se houver uma descoberta que a justifique.
 
-## 7. Regras para receitas
+## 7. Receitas fechadas do Prototype 0
 
-Toda nova receita deve responder:
+O Prototype 0 possui cinco receitas alquímicas principais.
 
-### Ingrediente A
-O que ele traz?
-
-### Ingrediente B
-O que ele traz?
-
-### Resultado
-Qual transformação surge?
-
-### Consequência
-Por que o resultado importa no mundo?
-
-Exemplos atualmente bem justificados:
+### Receita 1 — Nascimento Solar
 
 **Trigo Dourado + Seiva Bruta → Semente de Tomate Solar**
 
-Vida + Natureza estão fortemente presentes nos dois ingredientes, enquanto a Luz do trigo aponta para uma manifestação solar. O resultado abre uma nova cultura.
+A seiva fornece matéria viva e natural. O Trigo Dourado traz uma afinidade solar. A combinação gera uma nova possibilidade de cultivo com expressão solar.
+
+### Receita 2 — Restauração
 
 **Trigo Dourado + Tomate Solar → Poção Purificadora Fraca**
 
-Os dois ingredientes possuem Vida + Natureza + Luz. A combinação concentra uma afinidade restauradora, traduzida em purificação do ambiente.
+Os dois ingredientes compartilham Vida + Natureza + Luz. A combinação concentra essas propriedades em uma preparação restauradora, capaz de purificar a primeira barreira de corrupção.
+
+Purificação é efeito funcional, não aspecto.
+
+### Receita 3 — Seiva Brilhante
 
 **Seiva Bruta + Escama Brilhante → Seiva Brilhante**
 
-A seiva oferece matéria natural viva; a escama oferece uma manifestação luminosa ligada à água. O resultado continua sendo seiva, mas agora possui expressão de luz.
+A Seiva Bruta é matéria natural viva. A Escama Brilhante introduz uma expressão luminosa ligada à água. O resultado continua sendo seiva, mas passa a carregar Luz.
+
+Água não precisa permanecer como aspecto do resultado.
+
+### Receita 4 — Seiva Lunar
+
+**Seiva Brilhante + Peixe Luminoso → Seiva Lunar**
+
+A Seiva Brilhante já contém uma expressão de Luz. O Peixe Luminoso acrescenta a relação Luz + Sombra. A combinação produz uma matéria vegetal de expressão lunar.
+
+Água pode ser consumida/transformada no processo e não precisa aparecer no resultado.
+
+### Receita 5 — Semente Lunar
+
+**Seiva Lunar + Semente de Tomate Solar → Semente de Abóbora Lunar**
+
+A Semente de Tomate Solar representa uma cultura de expressão solar. A Seiva Lunar introduz a expressão noturna. A nova semente desloca a cultura para uma manifestação lunar.
+
+Fogo não precisa permanecer no resultado porque pertence à expressão solar do ingrediente original.
+
+## 8. Cadeia e dependências
+
+A progressão obrigatória termina na Receita 2:
+
+Trigo Dourado
+→ Seiva Bruta
+→ Semente de Tomate Solar
+→ Tomate Solar
+→ Poção Purificadora Fraca
+→ primeira purificação
+→ nova área
+→ pesca
+
+As Receitas 3–5 são uma cadeia opcional:
+
+Escama Brilhante
+→ Seiva Brilhante
+→ Peixe Luminoso
+→ Seiva Lunar
+→ Semente de Abóbora Lunar
+
+Essa cadeia não pode bloquear a conclusão do Prototype 0.
+
+## 9. Receitas fora do P0
+
+A antiga candidata:
 
 **Peixe Comum + Seiva Bruta → Isca Encantada**
 
-O peixe fornece Água + Vida e a seiva fornece Vida + Natureza. O resultado combina vida aquática e matéria natural em um item funcional para pesca.
+não faz parte do conjunto fechado do P0. A ideia pode retornar quando a pesca tiver profundidade suficiente para justificar diferentes iscas.
 
-As demais receitas continuam candidatas até que sua transformação tenha uma justificativa igualmente clara.
+Também ficam fora do P0:
+- Poção de Crescimento;
+- Poção de Revelação;
+- Adubo Encantado.
 
-## 8. Cadeia atual
+Esses conceitos podem ser explorados posteriormente.
 
-A cadeia de progressão obrigatória permanece:
+## 10. Fechamento
 
-1. Trigo Dourado + Seiva Bruta → Semente de Tomate Solar
-2. cultivar Tomate Solar
-3. Trigo Dourado + Tomate Solar → Poção Purificadora Fraca
-4. usar a poção na primeira barreira
-5. restaurar a área
-6. liberar exploração e pesca
+As cinco receitas acima estão fechadas como decisão de design.
 
-Receitas paralelas podem existir sem bloquear essa progressão.
+Continuam abertos somente:
+- quantidades dos ingredientes;
+- balanceamento;
+- tempo de produção, caso exista;
+- apresentação visual;
+- como as pistas são entregues ao jogador.
 
-Candidatas:
-- Seiva Bruta + Escama Brilhante → Seiva Brilhante
-- Peixe Comum + Seiva Bruta → Isca Encantada
-- Peixe Luminoso + Seiva Brilhante → Seiva Lunar
-- Seiva Lunar + Semente de Tomate Solar → Semente de Abóbora Lunar
-
-Essas receitas permanecem sujeitas a revisão de design.
-
-## 9. Descoberta e conhecimento
+## 11. Descoberta e conhecimento
 
 O jogador deve aprender:
 
@@ -264,7 +298,7 @@ A experiência desejada é:
 
 > “Eu conheço algumas propriedades desses ingredientes. Será que essa combinação produz alguma coisa?”
 
-## 10. Limite do Prototype 0
+## 12. Limite do Prototype 0
 
 O Prototype 0 não precisa de:
 
