@@ -9,6 +9,7 @@ Este repositório é a nova fonte de verdade para o protótipo e não é uma có
 - Definition of Done e escopo: PROTOTYPE_0.md
 - Visão ampla do jogo: docs/vision.md
 - Direção de arte do Prototype 0: docs/art/VISUAL_TARGET_0.md
+- Fundação de alquimia e tags: docs/alchemy/ALCHEMY_TAGS.md
 - Princípios visuais amplos: docs/art/ART_BIBLE.md
 - Linguagem do terreno: docs/art/TERRAIN_LANGUAGE.md
 - Linguagem dos golems: docs/art/GOLEM_LANGUAGE.md
