@@ -49,3 +49,18 @@ A fazenda poderá ser customizável em versões futuras.
 ## Regra
 
 Nada neste documento autoriza automaticamente uma funcionalidade no Prototype 0. Para isso, PROTOTYPE_0.md é a autoridade.
+
+
+## Decisões do Prototype 0
+
+O Prototype 0 adota como primeiro arco de referência:
+
+**Trigo Dourado + Seiva Bruta → Semente de Tomate Solar → Tomate Solar → Poção Purificadora Fraca → purificação de uma primeira área → acesso à pesca.**
+
+Cultivo deve ser permitido em solo apropriado e não corrompido, não limitado artificialmente a um único retângulo de fazenda.
+
+O mundo usa um ciclo de tempo acelerado como hipótese de balanceamento: uma hora do mundo corresponde a um minuto real, com sete dias do mundo por estação.
+
+A nomeação de recursos mágicos deve privilegiar **nome conhecido + adjetivo mágico**, preservando memória e legibilidade.
+
+Essas decisões orientam o Prototype 0; receitas posteriores, economia completa, catálogo amplo e outros sistemas permanecem fora ou abertos conforme PROTOTYPE_0.md.
