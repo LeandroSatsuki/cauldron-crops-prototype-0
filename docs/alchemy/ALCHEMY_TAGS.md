@@ -1,6 +1,6 @@
 # Cauldron Crops — Alchemy Tags
 
-Versão: 0.2
+Versão: 0.3
 Status: fundamento de design do Prototype 0
 
 ## 1. Objetivo
@@ -34,6 +34,7 @@ Exemplos:
 - bait
 - potion
 - material
+- fertilizer
 
 Essas tags ajudam catálogo, coleção, UI, filtros e regras de gameplay.
 
@@ -45,9 +46,7 @@ Os aspectos precisam ser relativamente estáveis ao longo do jogo.
 
 ### Aspectos fundamentais
 
-Os aspectos devem ser **atômicos e poucos**. Eles representam propriedades que o mundo reconhece por si mesmas e que podem aparecer em muitos ingredientes.
-
-Vocabulário-base do sistema:
+Vocabulário-base:
 
 - life — vida, vitalidade, matéria viva
 - nature — vínculo com a natureza e o mundo vegetal
@@ -58,149 +57,141 @@ Vocabulário-base do sistema:
 - light — luminosidade, brilho e revelação
 - shadow — ausência de luz, oculto e profundidade
 
-Esses oito aspectos são a base atual do sistema. O objetivo é manter o vocabulário pequeno o suficiente para o jogador aprender suas relações.
+Esses oito aspectos são a base atual do sistema.
 
-### Regra de cobertura
+### Regras fechadas
 
-Como regra de design inicial, cada aspecto fundamental deve aparecer em **pelo menos dois itens relevantes** do Prototype 0.
+- Aspectos representam afinidades mágicas, não propriedades físicas universais.
+- Um item pode carregar 1, 2 ou 3 aspectos; mais de 3 exige justificativa forte.
+- Cada aspecto deve aparecer em pelo menos dois itens relevantes quando a cobertura do sistema estiver madura.
+- Não criar itens artificialmente apenas para preencher cobertura.
+- Um mesmo item pode representar vários aspectos.
+- Propriedades derivadas, efeitos de gameplay e estados do mundo não viram automaticamente novos aspectos.
+- Tags funcionais permanecem separadas dos aspectos.
 
-Isso não significa criar dois itens exclusivos para cada aspecto. Um mesmo item pode carregar:
-- apenas um aspecto;
-- dois aspectos;
-- três aspectos;
-- ou, quando fizer sentido, mais de três.
+Spirit e corruption não são aspectos-base:
+- spirit representa consciência/manifestação de seres e poderá aparecer como propriedade especial;
+- corruption representa um estado do mundo e da matéria.
 
-A distribuição deve ser natural. O objetivo é garantir que nenhum aspecto apareça como uma propriedade isolada que só serve para uma receita.
-
-A cobertura de aspectos deve ser analisada como uma rede de relações, e não como oito listas independentes.
-
-Exemplo conceitual:
-
-**Item A** → Vida + Natureza
-
-**Item B** → Vida + Luz
-
-**Item C** → Água + Luz + Sombra
-
-Nesse caso, Vida e Luz já participam de múltiplos itens, e os itens podem compartilhar aspectos sem problema.
-
-**Spirit** e **corruption** não são aspectos-base do Prototype 0:
-- spirit representa consciência/manifestação de seres e poderá aparecer como propriedade especial de resultados ou sistemas futuros;
-- corruption representa um estado do mundo e da matéria, não um elemento que todo item precisa carregar.
-
-### Propriedades derivadas
+## 3. Propriedades derivadas
 
 Não transformar efeitos ou combinações conceituais em aspectos independentes sem necessidade.
 
-Exemplos de propriedades que podem ser **derivadas** de aspectos fundamentais:
+Exemplos:
 
-- growth — pode surgir da combinação de life + nature
-- warmth/heat — expressão de fire, possivelmente combinada com life ou light
-- cold — pode ser uma manifestação de water/air/shadow conforme o contexto
-- sun — conceito do mundo associado principalmente a light + fire
-- moon — conceito do mundo associado principalmente a light + shadow e ciclos noturnos
-- spirit — estado/propriedade especial ligada a seres conscientes, não aspecto-base
-- corruption — estado ambiental, não aspecto-base
-- magic — não deve ser um aspecto universal; a magia é a própria forma como o mundo transforma e manifesta propriedades.
-- attraction — efeito funcional de uma receita/item, não precisa virar aspecto-base
-
-Essas relações são hipóteses de design, não fórmulas matemáticas obrigatórias. O importante é não criar um aspecto separado para cada consequência ou adjetivo.
+- growth — pode surgir da combinação de life + nature;
+- warmth/heat — expressão de fire, possivelmente combinada com life ou light;
+- cold — pode ser manifestação de water/air/shadow conforme o contexto;
+- sun — conceito associado principalmente a light + fire;
+- moon — conceito associado principalmente a light + shadow e ciclos noturnos;
+- spirit — estado/propriedade especial ligada a seres conscientes;
+- corruption — estado ambiental;
+- magic — não é aspecto universal;
+- attraction — efeito funcional;
+- purification — efeito funcional.
 
 Regra:
 
-> **Se uma propriedade pode ser explicada naturalmente a partir de aspectos existentes, ela não deve virar um novo aspecto apenas para simplificar uma receita.**
+> Se uma propriedade pode ser explicada naturalmente a partir de aspectos existentes, ela não deve virar um novo aspecto apenas para simplificar uma receita.
 
-## 3. Regra de composição
+## 4. Regra de composição
 
-Uma receita de descoberta deve poder ser explicada em termos de aspectos fundamentais e de suas relações. O resultado pode receber uma propriedade derivada ou um significado funcional sem precisar transformar essa propriedade em um novo aspecto.
+Uma receita deve poder ser explicada em termos dos aspectos dos ingredientes e de uma transformação coerente.
 
-Exemplo:
+Não existe regra de que:
 
-Seiva Bruta
-- tags: sap, liquid, material
-- aspectos: life, nature, growth
+> aspectos do resultado = união matemática dos ingredientes.
 
-Escama Brilhante
-- tags: scale, material
-- aspectos: water, light, magic
+Um resultado pode:
+- preservar aspectos;
+- perder aspectos;
+- ganhar uma expressão derivada;
+- mudar sua função;
+- mudar de forma ou categoria.
 
-Logo, Seiva Bruta + Escama Brilhante pode produzir um resultado compatível com vida + natureza + brilho/magia, como Seiva Brilhante.
+O resultado precisa continuar fazendo sentido dentro do mundo.
 
-## 4. Tags não decidem sozinhas o resultado
-
-Para o Prototype 0, o caldeirão usará um conjunto pequeno de receitas autoradas e determinísticas.
-
-Os aspectos ajudam a:
-- justificar a receita;
-- organizar o design;
-- ensinar uma linguagem reutilizável ao jogador;
-- explicar futuras descobertas;
-- permitir validações;
-- preparar extensibilidade.
-
-Tags funcionais continuam separadas dos aspectos. Um item pode ser uma fruta, peixe ou isca sem que cada característica funcional precise virar um aspecto alquímico.
-
-Não criar, neste momento, um gerador automático que produza resultados para qualquer combinação de aspectos.
-
-A criação procedural de resultados seria uma etapa futura e exigiria regras próprias.
-
-## 5. Ingredientes iniciais — proposta
+## 5. Ingredientes de referência
 
 ### Trigo Dourado
 Tags: seed, crop, grain, food
-Aspectos fundamentais: life, nature, light
+Aspectos: life, nature, light
 
 ### Seiva Bruta
 Tags: sap, liquid, material
-Aspectos fundamentais: life, nature
+Aspectos: life, nature
+
+### Madeira
+Tags: material
+Aspectos: nature, earth
 
 ### Tomate Solar
 Tags: crop, fruit, food
-Aspectos fundamentais: life, nature, light, fire
+Aspectos: life, nature, light, fire
 
 ### Escama Brilhante
 Tags: scale, material
-Aspectos fundamentais: water, light
+Aspectos: water, light
 
 ### Peixe Comum
 Tags: fish, food
-Aspectos fundamentais: water, life
+Aspectos: water, life
 
 ### Peixe Luminoso
 Tags: fish, food
-Aspectos fundamentais: water, life, light, shadow
+Aspectos: water, life, light, shadow
+
+### Flor do Vento
+Tags: material, flora
+Aspectos: nature, air
+
+### Carvão
+Tags: material
+Aspectos: earth, fire
+
+### Semente de Tomate Solar
+Tags: seed
+Aspectos: life, nature, light, fire
 
 ### Seiva Brilhante
 Tags: sap, liquid, material
-Aspectos fundamentais: life, nature, light
-
-### Seiva Lunar
-Tags: sap, liquid, material
-Aspectos fundamentais: life, nature, light, shadow
-
-### Semente de Abóbora Lunar
-Tags: seed, crop
-Aspectos fundamentais: life, nature, light, shadow
+Aspectos: life, nature, light
 
 ### Isca Encantada
 Tags: bait, material
-Aspectos fundamentais: water, life, nature
+Aspectos: water, life, nature
 
-O efeito de atração é uma consequência funcional da receita e não precisa de um aspecto próprio.
+### Seiva Lunar
+Tags: sap, liquid, material
+Aspectos: life, nature, light, shadow
 
-## 6. Regra para novas tags e aspectos
+### Semente de Abóbora Lunar
+Tags: seed, crop
+Aspectos: life, nature, light, shadow
 
-Antes de criar uma propriedade nova, responder:
+## 6. Adubo
 
-1. Essa propriedade aparece em vários itens?
-2. Ela pode participar de mais de uma descoberta?
-3. Ela descreve uma característica real do mundo?
-4. O jogador conseguiria compreender sua existência pelo contexto?
-5. Ela continuará útil fora do Prototype 0?
+### Adubo Natural
 
-Se a resposta for não na maioria dos casos, preferir uma tag funcional ou uma regra específica de receita em vez de criar um novo aspecto.
+Tags:
+- fertilizer
+- material
 
-## 7. Regra para criação de receitas
+Aspectos:
+- nenhum obrigatório
+
+O Adubo Natural é uma utilidade agrícola e não precisa ser um resultado de alquimia.
+
+Função:
+- transformar excedentes agrícolas em recurso útil;
+- melhorar temporariamente uma plantação;
+- reduzir desperdício de colheita.
+
+A implementação inicial recomendada é simples e determinística. O adubo não deve ser requisito da progressão principal.
+
+Uma versão mágica poderá existir no futuro, mas somente se houver uma descoberta que a justifique.
+
+## 7. Regras para receitas
 
 Toda nova receita deve responder:
 
@@ -211,67 +202,80 @@ O que ele traz?
 O que ele traz?
 
 ### Resultado
-Qual propriedade ou transformação surge da combinação?
+Qual transformação surge?
 
 ### Consequência
 Por que o resultado importa no mundo?
 
-Uma receita só deve ser aprovada quando essas quatro respostas forem coerentes.
+Exemplos atualmente bem justificados:
 
-## 8. Cadeia inicial do Prototype 0
+**Trigo Dourado + Seiva Bruta → Semente de Tomate Solar**
 
-A cadeia de receitas continua provisória. Ela deve ser revisada contra os aspectos fundamentais antes de ser congelada.
+Vida + Natureza estão fortemente presentes nos dois ingredientes, enquanto a Luz do trigo aponta para uma manifestação solar. O resultado abre uma nova cultura.
 
-A cadeia candidata atual é:
+**Trigo Dourado + Tomate Solar → Poção Purificadora Fraca**
 
-Trigo Dourado + Seiva Bruta → Semente de Tomate Solar
+Os dois ingredientes possuem Vida + Natureza + Luz. A combinação concentra uma afinidade restauradora, traduzida em purificação do ambiente.
 
-Trigo Dourado + Tomate Solar → Poção Purificadora Fraca
+**Seiva Bruta + Escama Brilhante → Seiva Brilhante**
 
-Seiva Bruta + Escama Brilhante → Seiva Brilhante
+A seiva oferece matéria natural viva; a escama oferece uma manifestação luminosa ligada à água. O resultado continua sendo seiva, mas agora possui expressão de luz.
 
-Peixe Comum + Seiva Bruta → Isca Encantada
+**Peixe Comum + Seiva Bruta → Isca Encantada**
 
-Peixe Luminoso + Seiva Brilhante → Seiva Lunar
+O peixe fornece Água + Vida e a seiva fornece Vida + Natureza. O resultado combina vida aquática e matéria natural em um item funcional para pesca.
 
-Seiva Lunar + Semente de Tomate Solar → Semente de Abóbora Lunar
+As demais receitas continuam candidatas até que sua transformação tenha uma justificativa igualmente clara.
 
-A ordem, quantidades e alguns ingredientes ainda podem ser refinados pelo design e balanceamento. O objetivo desta cadeia é validar a coerência das relações, não congelar números.
+## 8. Cadeia atual
+
+A cadeia de progressão obrigatória permanece:
+
+1. Trigo Dourado + Seiva Bruta → Semente de Tomate Solar
+2. cultivar Tomate Solar
+3. Trigo Dourado + Tomate Solar → Poção Purificadora Fraca
+4. usar a poção na primeira barreira
+5. restaurar a área
+6. liberar exploração e pesca
+
+Receitas paralelas podem existir sem bloquear essa progressão.
+
+Candidatas:
+- Seiva Bruta + Escama Brilhante → Seiva Brilhante
+- Peixe Comum + Seiva Bruta → Isca Encantada
+- Peixe Luminoso + Seiva Brilhante → Seiva Lunar
+- Seiva Lunar + Semente de Tomate Solar → Semente de Abóbora Lunar
+
+Essas receitas permanecem sujeitas a revisão de design.
 
 ## 9. Descoberta e conhecimento
 
-No futuro, o jogador não deve precisar memorizar uma lista externa de receitas.
+O jogador deve aprender:
 
-O sistema pode ensinar:
 - propriedades dos itens;
 - categorias;
 - relações entre aspectos;
 - resultados descobertos;
-- pistas de combinações possíveis.
+- pistas para novas hipóteses.
 
-No Prototype 0, basta que a descoberta seja clara e o jogador consiga formar hipóteses sobre o próximo experimento.
-
-## 10. Filosofia
-
-> O jogador não deveria pensar: “qual receita o jogo quer que eu faça?”
+A meta não é memorizar uma lista externa de receitas.
 
 A experiência desejada é:
 
 > “Eu conheço algumas propriedades desses ingredientes. Será que essa combinação produz alguma coisa?”
 
-Esse comportamento é um dos principais candidatos a sustentar a curiosidade do Cauldron Crops.
-
-## 11. Limite do Prototype 0
+## 10. Limite do Prototype 0
 
 O Prototype 0 não precisa de:
+
 - dezenas de aspectos;
 - centenas de receitas;
 - alquimia procedural completa;
 - árvores complexas de dependência;
-- sistema de combinações infinito;
-- análise numérica avançada dos ingredientes.
+- combinações infinitas;
+- análise numérica avançada.
 
-Precisa somente provar que:
+Precisa provar:
 
 ingrediente → propriedades percebidas → hipótese → experimento → descoberta → consequência
 
