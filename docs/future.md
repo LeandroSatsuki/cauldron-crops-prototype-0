@@ -21,6 +21,7 @@ Não mover uma ideia para o Prototype 0 durante sua implementação sem uma deci
 - Achievements
 - Árvore de talentos
 - Economia avançada
+- Fornecedor misterioso e sistema completo de trocas naturais (a versão mínima do fornecedor permanece em avaliação para o Prototype 0)
 - Equipamentos
 - Transmutação avançada
 - IA emocional avançada dos golems
