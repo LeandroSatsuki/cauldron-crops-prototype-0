@@ -57,10 +57,12 @@ Vocabulário-base do sistema:
 - air — vento, movimento e respiração
 - light — luminosidade, brilho e revelação
 - shadow — ausência de luz, oculto e profundidade
-- spirit — alma, consciência e manifestação espiritual
-- corruption — deterioração, contaminação e influência da corrupção
 
-Esses são os aspectos fundamentais atuais. O objetivo é manter o vocabulário pequeno o suficiente para o jogador aprender suas relações.
+Esses oito aspectos são a base atual do sistema. O objetivo é manter o vocabulário pequeno o suficiente para o jogador aprender suas relações.
+
+**Spirit** e **corruption** não são aspectos-base do Prototype 0:
+- spirit representa consciência/manifestação de seres e poderá aparecer como propriedade especial de resultados ou sistemas futuros;
+- corruption representa um estado do mundo e da matéria, não um elemento que todo item precisa carregar.
 
 ### Propriedades derivadas
 
@@ -72,8 +74,10 @@ Exemplos de propriedades que podem ser **derivadas** de aspectos fundamentais:
 - warmth/heat — expressão de fire, possivelmente combinada com life ou light
 - cold — pode ser uma manifestação de water/air/shadow conforme o contexto
 - sun — conceito do mundo associado principalmente a light + fire
-- moon — conceito do mundo associado a light + shadow e ciclos noturnos
-- magic — não precisa ser uma propriedade universal; a manifestação mágica deve emergir da interação entre spirit e outras propriedades
+- moon — conceito do mundo associado principalmente a light + shadow e ciclos noturnos
+- spirit — estado/propriedade especial ligada a seres conscientes, não aspecto-base
+- corruption — estado ambiental, não aspecto-base
+- magic — não deve ser um aspecto universal; a magia é a própria forma como o mundo transforma e manifesta propriedades.
 - attraction — efeito funcional de uma receita/item, não precisa virar aspecto-base
 
 Essas relações são hipóteses de design, não fórmulas matemáticas obrigatórias. O importante é não criar um aspecto separado para cada consequência ou adjetivo.
@@ -132,7 +136,7 @@ Aspectos fundamentais: life, nature, light, fire
 
 ### Escama Brilhante
 Tags: scale, material
-Aspectos fundamentais: water, light, spirit
+Aspectos fundamentais: water, light
 
 ### Peixe Comum
 Tags: fish, food
@@ -140,23 +144,23 @@ Aspectos fundamentais: water, life
 
 ### Peixe Luminoso
 Tags: fish, food
-Aspectos fundamentais: water, life, light, shadow, spirit
+Aspectos fundamentais: water, life, light, shadow
 
 ### Seiva Brilhante
 Tags: sap, liquid, material
-Aspectos fundamentais: life, nature, light, spirit
+Aspectos fundamentais: life, nature, light
 
 ### Seiva Lunar
 Tags: sap, liquid, material
-Aspectos fundamentais: life, nature, light, shadow, spirit
+Aspectos fundamentais: life, nature, light, shadow
 
 ### Semente de Abóbora Lunar
 Tags: seed, crop
-Aspectos fundamentais: life, nature, light, shadow, spirit
+Aspectos fundamentais: life, nature, light, shadow
 
 ### Isca Encantada
 Tags: bait, material
-Aspectos fundamentais: water, life, nature, spirit
+Aspectos fundamentais: water, life, nature
 
 O efeito de atração é uma consequência funcional da receita e não precisa de um aspecto próprio.
 
