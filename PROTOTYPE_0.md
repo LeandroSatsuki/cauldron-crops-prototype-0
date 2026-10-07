@@ -264,7 +264,20 @@ Escopo mínimo:
 
 Não transportar o minigame e a infraestrutura externa do legado por inteiro.
 
-### O que ainda está deliberadamente aberto
+### Alquimia orientada por propriedades
+
+O caldeirão será orientado por duas camadas de metadados nos itens:
+
+- **tags funcionais**, que descrevem o que o item é ou como é usado;
+- **aspectos**, que descrevem propriedades conceituais/mágicas reutilizáveis nas descobertas.
+
+As receitas do Prototype 0 devem ser autoradas, determinísticas e justificáveis pelas propriedades dos ingredientes. O objetivo é que o jogador aprenda relações entre ingredientes em vez de decorar combinações arbitrárias.
+
+A especificação do sistema está em `docs/alchemy/ALCHEMY_TAGS.md`.
+
+O Prototype 0 não implementará um gerador automático de receitas por aspectos. O sistema de aspectos é uma fundação extensível para o presente e para conteúdo futuro.
+
+## O que ainda está deliberadamente aberto
 
 Ainda precisamos definir:
 - receitas 3, 4 e 5;
