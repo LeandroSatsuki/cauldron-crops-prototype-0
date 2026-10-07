@@ -1,6 +1,6 @@
 # Cauldron Crops — Alchemy Tags
 
-Versão: 0.1
+Versão: 0.2
 Status: fundamento de design do Prototype 0
 
 ## 1. Objetivo
@@ -43,30 +43,48 @@ Descrevem propriedades conceituais e mágicas que podem participar de descoberta
 
 Os aspectos precisam ser relativamente estáveis ao longo do jogo.
 
-### Aspectos-base propostos
+### Aspectos fundamentais
+
+Os aspectos devem ser **atômicos e poucos**. Eles representam propriedades que o mundo reconhece por si mesmas e que podem aparecer em muitos ingredientes.
+
+Vocabulário-base do sistema:
 
 - life — vida, vitalidade, matéria viva
-- nature — vínculo com natureza vegetal e mundo selvagem
-- growth — crescimento, germinação, desenvolvimento
-- water — água, umidade, afinidade aquática
-- earth — solo, pedra, matéria terrestre
-- fire — calor, combustão, energia térmica
-- air — vento, movimento, liberdade, respiração
-- light — luminosidade, brilho, revelação
-- shadow — oculto, ausência de luz, profundidade
-- sun — ciclo solar, calor vital, energia diurna
-- moon — ciclo lunar, noite, transformação, mistério
-- spirit — consciência, alma, manifestação da vida
-- magic — energia sobrenatural diretamente manipulável
-- corruption — deterioração, contaminação, influência da corrupção
-- cold — frio, preservação, afinidade gélida
-- warmth — calor confortável, energia, acolhimento
+- nature — vínculo com a natureza e o mundo vegetal
+- water — água, umidade e afinidade aquática
+- earth — solo, pedra e matéria terrestre
+- fire — fogo, combustão e energia térmica
+- air — vento, movimento e respiração
+- light — luminosidade, brilho e revelação
+- shadow — ausência de luz, oculto e profundidade
+- spirit — alma, consciência e manifestação espiritual
+- corruption — deterioração, contaminação e influência da corrupção
 
-Esses aspectos formam o vocabulário-base atual. Novos aspectos não devem ser criados para resolver uma única receita.
+Esses são os aspectos fundamentais atuais. O objetivo é manter o vocabulário pequeno o suficiente para o jogador aprender suas relações.
+
+### Propriedades derivadas
+
+Não transformar efeitos ou combinações conceituais em aspectos independentes sem necessidade.
+
+Exemplos de propriedades que podem ser **derivadas** de aspectos fundamentais:
+
+- growth — pode surgir da combinação de life + nature
+- warmth/heat — expressão de fire, possivelmente combinada com life ou light
+- cold — pode ser uma manifestação de water/air/shadow conforme o contexto
+- sun — conceito do mundo associado principalmente a light + fire
+- moon — conceito do mundo associado a light + shadow e ciclos noturnos
+- magic — não precisa ser uma propriedade universal; a manifestação mágica deve emergir da interação entre spirit e outras propriedades
+- attraction — efeito funcional de uma receita/item, não precisa virar aspecto-base
+
+Essas relações são hipóteses de design, não fórmulas matemáticas obrigatórias. O importante é não criar um aspecto separado para cada consequência ou adjetivo.
+
+Regra:
+
+> **Se uma propriedade pode ser explicada naturalmente a partir de aspectos existentes, ela não deve virar um novo aspecto apenas para simplificar uma receita.**
 
 ## 3. Regra de composição
 
-Uma receita de descoberta deve poder ser explicada em termos de propriedades.
+Uma receita de descoberta deve poder ser explicada em termos de aspectos fundamentais e de suas relações. O resultado pode receber uma propriedade derivada ou um significado funcional sem precisar transformar essa propriedade em um novo aspecto.
 
 Exemplo:
 
@@ -87,9 +105,12 @@ Para o Prototype 0, o caldeirão usará um conjunto pequeno de receitas autorada
 Os aspectos ajudam a:
 - justificar a receita;
 - organizar o design;
+- ensinar uma linguagem reutilizável ao jogador;
 - explicar futuras descobertas;
 - permitir validações;
 - preparar extensibilidade.
+
+Tags funcionais continuam separadas dos aspectos. Um item pode ser uma fruta, peixe ou isca sem que cada característica funcional precise virar um aspecto alquímico.
 
 Não criar, neste momento, um gerador automático que produza resultados para qualquer combinação de aspectos.
 
@@ -99,45 +120,45 @@ A criação procedural de resultados seria uma etapa futura e exigiria regras pr
 
 ### Trigo Dourado
 Tags: seed, crop, grain, food
-Aspectos: life, nature, growth, sun
+Aspectos fundamentais: life, nature, light
 
 ### Seiva Bruta
 Tags: sap, liquid, material
-Aspectos: life, nature, growth
+Aspectos fundamentais: life, nature
 
 ### Tomate Solar
 Tags: crop, fruit, food
-Aspectos: life, nature, growth, sun
+Aspectos fundamentais: life, nature, light, fire
 
 ### Escama Brilhante
 Tags: scale, material
-Aspectos: water, light, magic
+Aspectos fundamentais: water, light, spirit
 
 ### Peixe Comum
 Tags: fish, food
-Aspectos: water, life
+Aspectos fundamentais: water, life
 
 ### Peixe Luminoso
 Tags: fish, food
-Aspectos: water, life, light, moon, magic
+Aspectos fundamentais: water, life, light, shadow, spirit
 
 ### Seiva Brilhante
 Tags: sap, liquid, material
-Aspectos: life, nature, growth, light, magic
+Aspectos fundamentais: life, nature, light, spirit
 
 ### Seiva Lunar
 Tags: sap, liquid, material
-Aspectos: life, nature, moon, magic
+Aspectos fundamentais: life, nature, light, shadow, spirit
 
 ### Semente de Abóbora Lunar
 Tags: seed, crop
-Aspectos: life, nature, growth, moon, magic
+Aspectos fundamentais: life, nature, light, shadow, spirit
 
 ### Isca Encantada
 Tags: bait, material
-Aspectos: water, magic, attraction
+Aspectos fundamentais: water, life, nature, spirit
 
-Attraction é tratada neste momento como propriedade funcional específica, não como aspecto-base obrigatório. Sua permanência será validada quando a pesca for definida.
+O efeito de atração é uma consequência funcional da receita e não precisa de um aspecto próprio.
 
 ## 6. Regra para novas tags e aspectos
 
@@ -170,6 +191,8 @@ Por que o resultado importa no mundo?
 Uma receita só deve ser aprovada quando essas quatro respostas forem coerentes.
 
 ## 8. Cadeia inicial do Prototype 0
+
+A cadeia de receitas continua provisória. Ela deve ser revisada contra os aspectos fundamentais antes de ser congelada.
 
 A cadeia candidata atual é:
 
