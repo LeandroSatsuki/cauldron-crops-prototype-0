@@ -292,7 +292,8 @@ Não aprovar a receita até existir uma combinação de ingredientes que expliqu
 ### Poção de Revelação
 
 Status:
-- candidata.
+- fora do conjunto fechado do Prototype 0;
+- conteúdo futuro.
 
 Ideia:
 Uma poção associada a Luz e ao ato de revelar algo oculto.
@@ -409,8 +410,7 @@ Depois:
 - Carvão, somente se sua obtenção couber no mapa atual.
 
 Por último:
-- resultados alquímicos opcionais;
-- segunda camada de poções;
+- resultados alquímicos das Receitas 3–5;
 - itens ligados a exploração adicional.
 
 ## 11. Regra de aprovação
