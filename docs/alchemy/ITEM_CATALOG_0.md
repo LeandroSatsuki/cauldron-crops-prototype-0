@@ -1,7 +1,7 @@
 # Cauldron Crops — Catálogo de Itens do Prototype 0
 
 Versão: 0.1
-Status: proposta de consolidação
+Status: catálogo de referência do Prototype 0
 
 ## 1. Objetivo
 
@@ -174,8 +174,8 @@ Aspectos:
 - Sombra
 
 Status:
-- candidata para descoberta posterior;
-- não é necessária para o primeiro circuito de progressão.
+- resultado fechado da Receita 5;
+- conteúdo opcional do Prototype 0.
 
 ## 5. Pesca
 
@@ -277,7 +277,7 @@ A purificação é um efeito do resultado. Não é necessário criar um aspecto 
 ### Poção de Crescimento
 
 Status:
-- candidata.
+- fora do conjunto fechado do Prototype 0; conteúdo futuro.
 
 Ideia:
 Uma poção voltada para cultivo, ligada a Vida + Natureza e a uma manifestação de crescimento.
@@ -308,6 +308,9 @@ Não usar “revelação” apenas como buff genérico. A função deve estar li
 
 ### Seiva Brilhante
 
+Status:
+- resultado fechado da Receita 3.
+
 Tags:
 - sap
 - liquid
@@ -318,7 +321,7 @@ Aspectos:
 - Natureza
 - Luz
 
-Receita candidata:
+Receita fechada:
 **Seiva Bruta + Escama Brilhante → Seiva Brilhante**
 
 Função:
@@ -326,6 +329,9 @@ Função:
 - reforça que Luz pode transformar uma matéria natural sem alterar sua identidade básica.
 
 ### Seiva Lunar
+
+Status:
+- resultado fechado da Receita 4.
 
 Tags:
 - sap
@@ -338,15 +344,19 @@ Aspectos:
 - Luz
 - Sombra
 
-Receita candidata:
-**Peixe Luminoso + Seiva Brilhante → Seiva Lunar**
+Receita fechada:
+**Seiva Brilhante + Peixe Luminoso → Seiva Lunar**
 
 Função:
-- resultado alquímico mais raro;
-- possível preparação para conteúdo noturno/lunar;
-- ainda não é obrigatório para a progressão principal.
+- resultado alquímico opcional;
+- prepara a descoberta da Semente de Abóbora Lunar;
+- não bloqueia a progressão principal.
 
 ### Isca Encantada
+
+Status:
+- fora das cinco receitas fechadas do Prototype 0;
+- candidata para conteúdo futuro.
 
 Tags:
 - bait
@@ -357,7 +367,7 @@ Aspectos:
 - Vida
 - Natureza
 
-Receita candidata:
+Receita futura candidata:
 **Peixe Comum + Seiva Bruta → Isca Encantada**
 
 Função:
