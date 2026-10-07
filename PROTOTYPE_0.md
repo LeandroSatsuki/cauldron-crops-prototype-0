@@ -163,7 +163,7 @@ O primeiro circuito aprovado é:
 
 **Trigo Dourado → Seiva Bruta → Caldeirão → descoberta de Semente de Tomate Solar → cultivo de Tomate Solar → descoberta de Poção Purificadora Fraca → purificação de uma primeira barreira → nova área → acesso à pesca.**
 
-A forma exata de aquisição inicial de todos os recursos e as receitas posteriores ainda podem ser refinadas dentro deste circuito.
+A forma exata de aquisição inicial dos recursos ainda pode ser refinada dentro deste circuito. O conjunto de receitas do Prototype 0 está definido em `docs/alchemy/RECIPE_SET_0.md`.
 
 ### Primeira receita
 
@@ -177,13 +177,13 @@ A descoberta principal de progressão deve ser determinística. Aleatoriedade n�
 
 ### Segunda receita
 
-A segunda hipótese aprovada é:
+A segunda receita aprovada é:
 
 **Trigo Dourado + Tomate Solar → Poção Purificadora Fraca**
 
 Objetivo: demonstrar que uma descoberta do caldeirão não serve apenas para fabricar; ela altera o mundo e permite progressão.
 
-A receita pode ser ajustada durante o design, mas não deve criar dependência acidental de pesca, expedição ou outro sistema fora do recorte inicial.
+Esta receita não depende de pesca, expedição ou outro sistema fora do recorte inicial.
 
 ### Agricultura fora da corrupção
 
@@ -287,15 +287,13 @@ Regras fechadas para os aspectos alquímicos:
 - **Flor do Vento** é uma referência válida para o aspecto **Natureza + Ar**;
 - Vida e Natureza não devem ser atribuídos automaticamente a toda cultura comum; afinidades mais fortes devem ser reservadas a itens que realmente tenham essa característica no mundo.
 
-O Prototype 0 não implementará um gerador automático de receitas por aspectos. O sistema de aspectos é uma fundação extensível para o presente e para conteúdo futuro.
+O Prototype 0 não implementará um gerador automático de receitas por aspectos. O conjunto fechado de cinco receitas está documentado em `docs/alchemy/RECIPE_SET_0.md`. O sistema de aspectos é uma fundação extensível para o presente e para conteúdo futuro.
 
 ## O que ainda está deliberadamente aberto
 
 Ainda precisamos definir:
-- receitas 3, 4 e 5;
 - conjunto final de 3–5 peixes;
 - conjunto final de 3–5 cultivos;
-- conjunto final de poções;
 - evento contextual;
 - conteúdo exato da primeira missão;
 - texto da primeira memória do gato;
