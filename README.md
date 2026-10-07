@@ -11,6 +11,7 @@ Este repositório é a nova fonte de verdade para o protótipo e não é uma có
 - Direção de arte do Prototype 0: docs/art/VISUAL_TARGET_0.md
 - Fundação de alquimia e tags: docs/alchemy/ALCHEMY_TAGS.md
 - Catálogo inicial de itens: docs/alchemy/ITEM_CATALOG_0.md
+- Matriz inicial de aspectos: docs/alchemy/ASPECT_MATRIX_0.md
 - Princípios visuais amplos: docs/art/ART_BIBLE.md
 - Linguagem do terreno: docs/art/TERRAIN_LANGUAGE.md
 - Linguagem dos golems: docs/art/GOLEM_LANGUAGE.md
