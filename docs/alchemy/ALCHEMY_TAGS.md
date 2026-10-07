@@ -60,6 +60,30 @@ Vocabulário-base do sistema:
 
 Esses oito aspectos são a base atual do sistema. O objetivo é manter o vocabulário pequeno o suficiente para o jogador aprender suas relações.
 
+### Regra de cobertura
+
+Como regra de design inicial, cada aspecto fundamental deve aparecer em **pelo menos dois itens relevantes** do Prototype 0.
+
+Isso não significa criar dois itens exclusivos para cada aspecto. Um mesmo item pode carregar:
+- apenas um aspecto;
+- dois aspectos;
+- três aspectos;
+- ou, quando fizer sentido, mais de três.
+
+A distribuição deve ser natural. O objetivo é garantir que nenhum aspecto apareça como uma propriedade isolada que só serve para uma receita.
+
+A cobertura de aspectos deve ser analisada como uma rede de relações, e não como oito listas independentes.
+
+Exemplo conceitual:
+
+**Item A** → Vida + Natureza
+
+**Item B** → Vida + Luz
+
+**Item C** → Água + Luz + Sombra
+
+Nesse caso, Vida e Luz já participam de múltiplos itens, e os itens podem compartilhar aspectos sem problema.
+
 **Spirit** e **corruption** não são aspectos-base do Prototype 0:
 - spirit representa consciência/manifestação de seres e poderá aparecer como propriedade especial de resultados ou sistemas futuros;
 - corruption representa um estado do mundo e da matéria, não um elemento que todo item precisa carregar.
