@@ -275,6 +275,18 @@ As receitas do Prototype 0 devem ser autoradas, determinísticas e justificávei
 
 A especificação do sistema está em `docs/alchemy/ALCHEMY_TAGS.md`.
 
+Regras fechadas para os aspectos alquímicos:
+- os aspectos fundamentais são **Vida, Natureza, Água, Terra, Fogo, Ar, Luz e Sombra**;
+- aspectos representam **afinidades mágicas**, não propriedades físicas universais;
+- itens comuns não recebem aspectos apenas por serem vivos, vegetais ou naturais;
+- um item pode carregar 1, 2 ou 3 aspectos, e mais somente quando houver justificativa forte;
+- cada aspecto deve aparecer em pelo menos dois itens relevantes, sem criar itens artificialmente apenas para preencher cobertura;
+- propriedades derivadas, efeitos de gameplay e estados do mundo não viram automaticamente novos aspectos;
+- tags funcionais permanecem separadas dos aspectos;
+- **Madeira** entra como recurso relevante do sistema; sua combinação inicial proposta é **Natureza + Terra**;
+- **Flor do Vento** é uma referência válida para o aspecto **Natureza + Ar**;
+- Vida e Natureza não devem ser atribuídos automaticamente a toda cultura comum; afinidades mais fortes devem ser reservadas a itens que realmente tenham essa característica no mundo.
+
 O Prototype 0 não implementará um gerador automático de receitas por aspectos. O sistema de aspectos é uma fundação extensível para o presente e para conteúdo futuro.
 
 ## O que ainda está deliberadamente aberto
