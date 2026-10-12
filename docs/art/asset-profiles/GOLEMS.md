@@ -7,7 +7,7 @@
 Golems são manifestações físicas da magia do mundo formadas através da matéria. Conceito-base: **magia + matéria → criatura**; não um humanoide pronto com textura de pedra.
 
 ## Perspectiva e formato
-- Vista top-down/3/4 coerente com os personagens do jogo.
+- Câmera elevada olhando para baixo, igual à dos personagens do jogo; a parte superior da criatura deve ser predominante e as faces laterais devem ser discretas.
 - Sprite isolado com alpha por padrão. Não incluir cenário ou base de pedestal se não for solicitado.
 - A matéria deve permanecer legível na silhueta e no volume.
 - Não escolher dimensões ou quantidade de frames por conta própria se o pipeline ainda não as definiu.
