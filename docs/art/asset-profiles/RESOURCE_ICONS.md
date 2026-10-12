@@ -7,7 +7,7 @@
 Criar ícones de leitura imediata para itens, ingredientes, materiais e recursos. Cada ícone deve ser reconhecível e distinguível na interface sem abandonar a linguagem de pixel art do mundo.
 
 ## Perspectiva e formato
-- Usar uma vista top-down/3/4 simplificada e consistente; a orientação pode ser mais frontal em objetos cuja forma só seja reconhecida assim, mas não alternar sem motivo entre ícones da mesma família.
+- Para ícones que representam assets do mundo, usar câmera elevada apontada para baixo, com superfície superior predominante. Simplificações para melhorar o reconhecimento são permitidas, mas manter a mesma orientação dentro de uma família e evitar perspectiva isométrica em losangos.
 - Um item por canvas por padrão, centralizado, com alpha.
 - Não incluir slot de inventário, borda de UI, texto, legenda, número, sombra de cartão ou fundo.
 - Manter margem suficiente e não cortar pontas, folhas ou acessórios.
