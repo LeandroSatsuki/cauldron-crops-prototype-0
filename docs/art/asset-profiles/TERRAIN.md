@@ -7,7 +7,7 @@
 Criar superfícies que façam a floresta parecer um lugar vivo e contínuo, sem competir com gato, cultivos, criaturas ou objetos interativos.
 
 ## Perspectiva e formato
-- Tiles e superfícies vistos pela câmera top-down/3/4 do jogo; o chão é visto predominantemente de cima.
+- Tiles e superfícies devem ser vistos de uma câmera elevada que olha para baixo; a superfície do chão predomina no quadro. Não inclinar o plano em losangos nem simular uma vista isométrica exagerada.
 - Para tiles, entregar a unidade ou conjunto solicitado sem inclinar o plano do chão para uma perspectiva lateral.
 - Preservar bordas compatíveis para repetição quando o pedido for por tile seamless.
 - Fundo transparente para peças isoladas; não adicionar árvores, pedras ou flores que não foram solicitadas.
