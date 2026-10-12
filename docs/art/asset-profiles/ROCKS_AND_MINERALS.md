@@ -7,7 +7,7 @@
 Representar materiais com peso e estrutura, integrados à floresta. Rochas comuns devem parecer minerais opacos; cristais e recursos mágicos podem ter luminosidade localizada sem transformar todas as pedras em itens mágicos.
 
 ## Perspectiva e formato
-- Vista top-down/3/4: mostrar superfície superior e faces laterais discretas quando forem necessárias para comunicar volume.
+- Câmera elevada apontada para baixo: a superfície superior da pedra/cristal deve ocupar a maior parte do sprite; faces laterais são discretas e apenas sugerem volume. Evitar projeção isométrica em losangos.
 - Sprite isolado com alpha por padrão. Não adicionar chão, plantas, minério solto ou partículas sem pedido.
 - Grupos de pedras devem variar escala, orientação e distância; evitar conjuntos simétricos ou cópias duplicadas evidentes.
 - Não assumir uma resolução fixa; manter a densidade aparente do pixel da referência aprovada.
