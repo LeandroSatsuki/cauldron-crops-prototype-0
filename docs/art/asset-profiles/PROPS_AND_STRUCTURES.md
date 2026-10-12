@@ -7,7 +7,7 @@
 Criar objetos com função clara e história material. Estruturas podem parecer antigas, recuperadas pela floresta e parcialmente cobertas por musgo, mas precisam continuar legíveis e utilizáveis no gameplay.
 
 ## Perspectiva e formato
-- Vista top-down/3/4 consistente com o jogo. Não misturar vista frontal de catálogo com assets vistos de cima.
+- Câmera elevada apontada para baixo. Priorizar a superfície superior e mostrar apenas porções laterais compatíveis com essa inclinação. Não misturar vista frontal de catálogo, perspectiva baixa e projeção isométrica em losangos.
 - Sprite isolado com alpha por padrão. Incluir chão, sombra projetada extensa, decoração ou contexto arquitetônico somente quando solicitado.
 - Para estruturas maiores, preservar uma composição coerente entre partes superiores, laterais visíveis e footprint no chão.
 - Não fixar dimensões universais; seguir dimensões fornecidas ou validar no benchmark.
