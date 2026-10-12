@@ -4,10 +4,10 @@
 **Carregar junto com:** `../ASSET_GENERATION_CORE.md`
 
 ## Objetivo visual
-Criar personagens legíveis e expressivos dentro da escala top-down/3/4. O personagem é um elemento de gameplay e precisa se destacar do terreno sem parecer colado sobre o mundo.
+Criar personagens legíveis e expressivos para uma câmera elevada apontada para baixo, com inclinação moderada. O personagem é um elemento de gameplay e precisa se destacar do terreno sem parecer colado sobre o mundo.
 
 ## Perspectiva e formato
-- Personagens vistos na câmera top-down/3/4 do jogo; cabeça, costas, laterais e direção do corpo devem seguir a perspectiva aprovada.
+- Ver o personagem de cima, com a parte superior da cabeça/corpo visível e as laterais aparecendo só parcialmente. Pose e orientação devem fazer sentido vistos de uma câmera elevada; não usar postura frontal de retrato nem vista lateral pura.
 - Para sprite isolado, fundo transparente/alpha. Não incluir cenário, chão, sombra grande, balão de fala, interface ou texto.
 - Não inventar dimensões do sprite nem número de frames. Para animação, manter escala, âncora/footprint, proporções e direção da luz consistentes entre frames.
 - Usar o Visual Master aprovado do gato como referência de identidade, não redesenhar a identidade ao gerar novas poses.
