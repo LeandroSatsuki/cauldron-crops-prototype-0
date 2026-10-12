@@ -7,7 +7,7 @@
 Representar magia como parte da natureza: crescimento, transformação, energia localizada ou luz que revela algo. O efeito deve servir ao gameplay e à composição, não encobrir o asset de origem.
 
 ## Perspectiva e formato
-- Efeitos no mundo seguem a câmera top-down/3/4 e precisam encaixar com o objeto/solo ao qual pertencem.
+- Efeitos no mundo devem alinhar-se ao plano do terreno visto de uma câmera elevada apontada para baixo. Efeitos que nascem no chão devem parecer aderidos à superfície, não projetados em perspectiva isométrica.
 - Sprite de efeito isolado com alpha; não incluir fundo, personagem, fonte emissiva ou cenário que não tenha sido solicitado.
 - Para animação, manter centro de emissão, escala aparente e forma consistentes entre frames. Não inventar contagem de frames.
 - Criar variações de duração, intensidade ou estado apenas quando solicitadas.
