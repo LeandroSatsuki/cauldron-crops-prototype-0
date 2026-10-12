@@ -17,7 +17,9 @@ O objetivo não é definir toda a arte futura de Cauldron Crops. O objetivo é i
 
 A referência de câmera do Prototype 0 é próxima de Stardew Valley e Sun Haven.
 
-- perspectiva top-down em 3/4;
+- câmera posicionada acima do mundo, apontada para baixo em direção ao chão;
+- inclinação moderada: a superfície superior do terreno é predominante e as faces laterais aparecem apenas parcialmente;
+- evitar projeção isométrica em losangos, eixos diagonais exagerados e perspectiva de câmera baixa;
 - câmera acompanha o gato;
 - zoom é permitido;
 - a distância da câmera deve preservar leitura do mundo e das interações;
