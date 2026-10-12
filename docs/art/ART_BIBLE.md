@@ -49,7 +49,7 @@ A inspiração em Stardew Valley e Sun Haven é de linguagem geral, composição
 
 ## 4. Escala e câmera
 
-A câmera é top-down/3/4 e acompanha o gato.
+A câmera acompanha o gato a partir de uma posição elevada, olhando para baixo em direção ao terreno. A inclinação é moderada: a superfície superior do mundo predomina, enquanto faces laterais aparecem apenas o suficiente para sugerir volume. Evitar projeção isométrica em losangos, diagonais exageradas e perspectiva de câmera baixa.
 
 O jogo possui zoom.
 
