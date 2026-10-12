@@ -7,7 +7,7 @@
 Transmitir floresta densa, viva, antiga e orgânica. A vegetação deve envolver clareiras e caminhos; o mundo não deve parecer uma fazenda aberta com árvores decorativas ao redor.
 
 ## Perspectiva e formato
-- Usar câmera top-down/3/4: a copa é vista de cima, mas tronco, raízes e volume podem sugerir profundidade de modo consistente.
+- Usar câmera elevada apontada para baixo. A copa deve ser vista predominantemente de cima; tronco, raízes e volume podem mostrar apenas as faces necessárias para sugerir profundidade. Não desenhar a árvore como vista de perfil ou como diorama isométrico.
 - Árvore ou arbusto isolado: sprite centralizado com alpha, sem chão ou cenário extra, a menos que seja solicitado.
 - Não escolher resolução universal; preservar escala e densidade de pixels dos exemplos aprovados.
 - Em árvores altas, a copa e o tronco precisam ser pensados como um conjunto espacial coerente; não mudar o ângulo de câmera entre copa e base.
