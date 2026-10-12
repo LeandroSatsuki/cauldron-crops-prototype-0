@@ -19,7 +19,11 @@ Prioridades, nesta ordem:
 
 ## 2. Câmera, perspectiva e formato
 
-- **Perspectiva do mundo:** top-down em 3/4, consistente com o jogo. Não usar vista lateral, isométrica em diamante ou perspectiva de câmera de primeira pessoa, salvo solicitação explícita.
+- **Direção da câmera:** câmera posicionada claramente acima do cenário e apontada para baixo, em direção ao chão.
+- **Inclinação:** inclinação moderada; a superfície superior do chão e dos objetos deve ocupar a maior parte visível. Faces laterais só aparecem parcialmente para sugerir volume.
+- **Leitura:** deve parecer a câmera de um jogo 2D de exploração visto de cima, não uma câmera na altura dos olhos nem uma ilustração diagonal de cenário.
+- **Evitar:** projeção isométrica em losangos, eixos diagonais exagerados, vista lateral, vista frontal de catálogo ou perspectiva de câmera baixa.
+- Não usar apenas os termos “top-down 3/4” ou “3/4 view” como descrição de câmera no prompt de geração. Sempre incluir a descrição explícita acima.
 - **Pixel art nativa:** desenhar com agrupamentos intencionais de pixels. Não produzir uma ilustração suave e apenas reduzi-la/pixelizá-la.
 - **Entrega padrão:** um asset isolado, centralizado, em PNG com fundo transparente/alpha quando suportado. Não incluir cenário completo, moldura, texto, UI, assinatura, marca-d'água ou elementos que não foram pedidos.
 - **Canvas e escala:** usar as dimensões fornecidas pelo pedido, pela referência ou pelo pipeline. Se não estiverem disponíveis, não inventar um padrão universal de 16×16, 32×32, 64×64 ou 128×128; manter proporções razoáveis e indicar que a escala ainda precisa de validação.
@@ -71,7 +75,7 @@ Usar somente as cores abaixo por padrão. Não inventar cores intermediárias, a
 ## 6. Não pode ter
 
 - Estilo 3D renderizado, pintura suave ou ilustração digital simplesmente pixelizada.
-- Perspectiva incompatível com top-down/3/4.
+- Perspectiva lateral, frontal, baixa ou isométrica em losangos; diagonais exageradas que escondam a superfície superior.
 - Cores fora da paleta padrão sem autorização explícita.
 - Antialiasing, blur ou gradientes que introduzam cores intermediárias.
 - Contorno preto grosso universal.
@@ -89,7 +93,7 @@ Usar somente as cores abaixo por padrão. Não inventar cores intermediárias, a
 - Hierarquia clara de valores: sombra, base, luz e acento.
 - Magia localizada e integrada à natureza.
 - Detalhes concentrados em pontos focais.
-- Identidade legível em tamanho pequeno e no contexto top-down/3/4.
+- Identidade legível em tamanho pequeno, vista de cima e na inclinação moderada definida pelo jogo.
 - Consistência com o Visual Master do gato e com assets da mesma categoria.
 
 ## 8. Como o gerador deve montar o contexto
@@ -106,7 +110,7 @@ Não carregar perfis de outras categorias sem necessidade. Não reescrever as re
 
 Antes de aceitar o resultado, verificar:
 - A categoria e a função estão imediatamente claras?
-- A perspectiva top-down/3/4 está correta?
+- A câmera está claramente acima e olhando para baixo, com a superfície superior predominante e sem projeção isométrica exagerada?
 - As cores pertencem à paleta permitida?
 - A luz e a sombra seguem a regra definida?
 - O fundo/alpha e o enquadramento estão corretos?
