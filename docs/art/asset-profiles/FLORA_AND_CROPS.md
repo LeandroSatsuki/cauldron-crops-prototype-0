@@ -7,7 +7,7 @@
 Criar plantas reconhecíveis, orgânicas e mágicas, integradas à floresta. Cultivos precisam comunicar função e fase de crescimento; flora selvagem deve enriquecer o cenário sem transformar o chão em uma decoração uniforme.
 
 ## Perspectiva e formato
-- Vista top-down/3/4 coerente com o chão e a câmera do jogo.
+- Usar câmera elevada olhando para baixo, coerente com o plano do chão. Mostrar a superfície superior das folhas, flores e chapéus de cogumelo; mostrar laterais apenas quando forem necessárias para a leitura da forma.
 - Plantas isoladas devem vir como sprites com alpha, sem vaso, canteiro, chão ou cena não solicitados.
 - Cultivos: produzir a fase exata pedida; não combinar broto, flor, fruto maduro e raízes em um único sprite se forem fases diferentes.
 - Se for solicitada uma sequência de crescimento, manter mesma câmera, base/footprint e identidade entre fases.
